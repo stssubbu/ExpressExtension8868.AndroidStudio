@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/wholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/irsformlayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/subTitleTextView"
+                        android:text="@string/select_type_of_extension" />
+
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+
+                        <LinearLayout
+                            android:id="@+id/form"
+                            style="@style/Border2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioGroup
+                                    android:id="@+id/extensionGroupRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/automaticradio"
+                                        style="@style/RadioButtonStyle"
+                                        android:checked="true"
+                                        android:paddingLeft="3dp"
+                                        android:text="@string/Automatic_3_month_Extension"
+                                        android:visibility="visible" />
+
+                                    <RadioButton
+                                        android:id="@+id/notautomaticradio"
+                                        style="@style/RadioButtonStyle"
+                                        android:paddingLeft="3dp"
+                                        android:text="@string/NotAutomatic_3_month_Extension" />
+
+                                </RadioGroup>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/automatic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/autoHint"
+                                    style="@style/hintTextView"
+                                    android:text="@string/auto_tax_help_text" />
+
+
+                                <TableLayout
+                                    android:id="@+id/AutoTableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="visible">
+
+                                    <TableRow
+                                        android:id="@+id/tableRow1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/textView1"
+                                            style="@style/LabelTextView"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="right"
+                                            android:text="@string/Actual_Due_Date_1" />
+
+                                        <TextView
+                                            android:id="@+id/autoactualduedatedata"
+                                            style="@style/ValueTextView"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/tableRow2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp">
+
+                                        <TextView
+                                            android:id="@+id/textView2"
+                                            style="@style/LabelTextView"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="right"
+                                            android:text="@string/Extended_Due_Date_1" />
+
+                                        <TextView
+                                            android:id="@+id/autoextendedduedatedata"
+                                            style="@style/ValueTextView"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+                                </TableLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/notautomaticlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <TableLayout
+                                    android:id="@+id/NotAutoTableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="visible">
+
+
+                                    <TableRow
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            style="@style/LabelTextView"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="right"
+                                            android:text="@string/Actual_Due_Date_1" />
+
+                                        <TextView
+                                            android:id="@+id/NotAutoactualduedatedata"
+                                            style="@style/ValueTextView"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp">
+
+                                        <TextView
+                                            style="@style/LabelTextView"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="right"
+                                            android:text="@string/Extended_Due_Date_1" />
+
+                                        <TextView
+                                            android:id="@+id/NotAutoextendedduedatedata"
+                                            style="@style/ValueTextView"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+                                </TableLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/selectreasonlayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/selectreasontextview"
+                                        style="@style/ValueTextView"
+                                        android:layout_gravity="left"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/Select_the_reason_below" />
+
+                                    <TextView
+                                        android:id="@+id/notAutoHint"
+                                        style="@style/hintTextView"
+                                        android:text="@string/auto_tax_help_text" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+                                        <RadioButton
+                                            android:id="@+id/reasonunavoidradio"
+                                            style="@style/RadioButtonStyle"
+                                            android:paddingLeft="3dp"
+                                            android:text="@string/notauto_reason1" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textNote1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="32dp"
+                                                android:text="@string/NOTE"
+                                                android:textColor="@color/Grey"
+                                                android:textSize="@dimen/hint_text_size"
+                                                android:textStyle="bold|italic" />
+
+                                            <TextView
+                                                android:id="@+id/textNote2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/note1"
+                                                android:textColor="@color/Grey"
+                                                android:textSize="@dimen/hint_text_size"
+                                                android:textStyle="bold|italic" />
+                                        </LinearLayout>
+
+                                        <RadioButton
+                                            android:id="@+id/reasonreconstuctradio"
+                                            style="@style/RadioButtonStyle"
+                                            android:paddingLeft="3dp"
+                                            android:text="@string/notauto_reason2" />
+
+                                        <RadioButton
+                                            android:id="@+id/reasonnotsufficientTimeradio"
+                                            style="@style/RadioButtonStyle"
+                                            android:layout_gravity="center"
+                                            android:gravity="left"
+                                            android:paddingLeft="3dp"
+                                            android:text="@string/notauto_reason3" />
+
+                                        <LinearLayout
+                                            android:id="@+id/otherreason"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RadioButton
+                                                android:id="@+id/reasonOtherradio"
+                                                style="@style/RadioButtonStyle"
+                                                android:paddingLeft="3dp"
+                                                android:text="@string/notauto_reason4" />
+
+                                            <com.rengwuxian.materialedittext.MaterialEditText
+                                                android:id="@+id/otherreasonEdittext"
+                                                style="@style/material_edittext_style"
+                                                android:layout_width="400dp"
+                                                android:layout_height="70dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:ems="15"
+                                                android:gravity="top|left"
+                                                android:imeOptions="actionDone"
+                                                android:inputType="textMultiLine"
+                                                android:maxLength="500"
+                                                android:singleLine="false"
+                                                android:textCursorDrawable="@null"
+                                                android:visibility="gone" />
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/groupReturnlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/subTitleTextView"
+                        android:text="@string/based_on_org" />
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout style="@style/Border2">
+
+                            <CheckBox
+                                android:id="@+id/isforeigncheckbox"
+                                style="@style/CheckboxStyle"
+                                android:text="@string/based_org_1" />
+
+                            <CheckBox
+                                android:id="@+id/isgroupreturnCheckBox"
+                                style="@style/CheckboxStyle"
+                                android:text="@string/based_org_2" />
+
+                            <LinearLayout
+                                android:id="@+id/groupexapnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/groupexNumTextview"
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/groupexNumEditText"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:ems="13"
+                                        android:hint="@string/Group_Exemption_Number"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="4"
+                                        android:singleLine="true" />
+
+                                </LinearLayout>
+
+                                <RadioGroup
+                                    android:id="@+id/groupRadioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/wholegroupRadio"
+                                        style="@style/RadioButtonStyle"
+                                        android:button="@drawable/radiobuttonbackground"
+                                        android:text="@string/is_whole_group" />
+
+
+                                    <RadioButton
+                                        android:id="@+id/partofgroupRadio"
+                                        style="@style/RadioButtonStyle"
+                                        android:text="@string/is_part_group" />
+                                </RadioGroup>
+
+                                <LinearLayout
+                                    android:id="@+id/isPartofGroupLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/addPartofGroupLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical" />
+
+                                    <android.support.v7.widget.CardView
+                                        android:id="@+id/addgroupButton"
+                                        style="@style/PrimaryButtonStyle"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="15dp">
+
+                                        <TextView
+                                            android:id="@+id/searchText"
+                                            style="@style/card_button_text"
+                                            android:text="@string/Add_Part_Of_Group" />
+                                    </android.support.v7.widget.CardView>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ETCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ETnext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETnextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

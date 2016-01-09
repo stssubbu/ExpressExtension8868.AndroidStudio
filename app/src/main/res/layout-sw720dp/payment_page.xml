@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Payment" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout
+                        style="@style/Border2"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/Total_Fees"
+                                android:textColor="@color/thickblue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:layout_width="wrap_content"
+                                android:text=":"
+                                android:textColor="@color/thickblue"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/PaymentTotalPrice"
+                                style="@style/ValueTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/BalanceRed"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ValueTextView"
+                            android:padding="10dp"
+                            android:text="@string/paymentStr" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/CardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/subTitleTextView"
+                        android:text="@string/Payment_Details" />
+
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout
+                            style="@style/Border2"
+                            android:padding="10dp">
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:padding="10dp"
+                                android:text="@string/creditcardDetails" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/NameOnCardtext"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/NameOnCard"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/addresseditText2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="visible" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/CardNumberText"
+                                        style="@style/material_edittext_style"
+                                        android:drawableLeft="@drawable/creditempty"
+                                        android:drawablePadding="10dp"
+                                        android:ems="15"
+                                        android:hint="@string/CardNo"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="16"
+                                        android:nextFocusForward="@+id/cityeditText" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/monthSpinner"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint="@string/Month"
+                                        app:met_floatingLabel="normal" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/yearSpinner"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:ems="12"
+                                        android:hint="@string/Year"
+                                        android:maxLength="4"
+                                        app:met_floatingLabel="normal" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="visible" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/cvvText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="10"
+                                        android:hint="@string/cvv"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberPassword"
+                                        android:maxLength="4"
+                                        android:nextFocusForward="@+id/cityeditText" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/cvvnumber"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/amexcreditanotherformat"
+                                        android:visibility="visible" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View style="@style/horizantal_line_style" />
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:padding="10dp"
+                                android:text="@string/Billing_Address" />
+
+                            <CheckBox
+                                android:id="@+id/BCOusideAddressCheckBox"
+                                style="@style/CheckboxStyle"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/is_the_address_outside_us_" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCAddress1Edittext1"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_address_1_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/addresseditText2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="invisible" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCAddresse2ditText2"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_address_2_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/cityeditText" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCCityeditText"
+
+                                        style="@style/material_edittext_style"
+                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                        android:ems="15"
+                                        android:hint="@string/_city"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="22"
+                                        android:nextFocusForward="@+id/zipeditText"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCStateorprovinceEdit"
+                                        style="@style/material_edittext_style"
+                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                        android:ems="15"
+                                        android:hint="@string/_state_or_province_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="17"
+                                        android:singleLine="true"
+                                        android:visibility="gone" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/BCStateSpinner"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="State"
+                                        app:met_floatingLabel="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/BCCountryLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="visible" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/BCCountrySpinner"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:ems="15"
+                                        android:hint="Country"
+                                        app:met_floatingLabel="normal" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCZipeditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_zip_code"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="10"
+                                        android:singleLine="true" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/ValueTextView"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="invisible" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BCFaxEditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/fax_number_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="14"
+                                        android:singleLine="true"
+                                        android:visibility="visible" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Cancel"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/CancelText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Next"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/NextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

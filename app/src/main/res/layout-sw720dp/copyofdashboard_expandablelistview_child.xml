@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/expandablechildrectangleshape"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/FormType"
+                style="@style/subTitleTextView"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/viewreject"
+                    style="@style/SecondaryButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/viewrejectText"
+                        style="@style/card_button_text"
+                        android:text="@string/icon_error" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Delete"
+                    style="@style/SecondaryButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/DeleteText"
+                        style="@style/card_button_text"
+                        android:text="@string/icon_delete" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/appovalLetterbtn"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/appovalLetterText"
+                        style="@style/card_button_text"
+                        android:text="@string/APPROVAL_LETTER" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/formbtn"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/formbtnText"
+                        style="@style/card_button_text"
+                        android:text="@string/FORM_8868" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/receiptbtn"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/receiptbtnText"
+                        style="@style/card_button_text"
+                        android:text="@string/RECEIPT" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/continueleftof"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/continueleftofText"
+                        style="@style/card_button_text"
+                        android:text="@string/Continue_where_you_left_off" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/horizantal_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/taxperoidtitle"
+                        style="@style/LabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Tax_Period" />
+
+                    <TextView
+                        android:id="@+id/taxperoid"
+                        style="@style/ValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="9" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/terminatedtextView"
+                        style="@style/LabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Tax_Due" />
+
+                    <TextView
+                        android:id="@+id/terminated"
+                        style="@style/ValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="9" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/edit1"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/edit1Text"
+                        style="@style/card_button_text"
+                        android:text="@string/edit" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/horizantal_line_style"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/principal_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/principalofficetextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/darkgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/edit2"
+                    style="@style/ThirdButtonStyle"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/edit2Text"
+                        style="@style/card_button_text"
+                        android:text="@string/edit" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/principalname"
+            style="@style/ValueTextView" />
+
+
+        <TextView
+            android:id="@+id/principaladdress"
+            style="@style/ValueTextView" />
+
+
+        <TextView
+            android:id="@+id/principalstatezip"
+            style="@style/ValueTextView" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

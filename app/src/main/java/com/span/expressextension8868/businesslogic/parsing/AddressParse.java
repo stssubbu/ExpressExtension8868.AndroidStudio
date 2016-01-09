@@ -1,0 +1,70 @@
+package com.span.expressextension8868.businesslogic.parsing;
+
+import com.span.expressextension8868.model.core.AddBussinessInputModel;
+
+import org.json.JSONObject;
+
+import java.util.Vector;
+
+/**
+ * Created by STS-099 on 12/30/2015.
+ */
+public class AddressParse {
+
+    AddBussinessInputModel addbussinessinputmodel;
+
+    public AddBussinessInputModel parse(String jsstring) {
+        if (jsstring != null) {
+
+            System.out.println("JSONSTRING " + jsstring);
+
+            try {
+                JSONObject jsonObj = new JSONObject(jsstring);
+
+
+                addbussinessinputmodel = new AddBussinessInputModel();
+
+                addbussinessinputmodel.setOS(jsonObj.getString("OS"));
+                addbussinessinputmodel.setEM(jsonObj.getString("EM"));
+
+                /****** Address Details ******/
+
+                addbussinessinputmodel.setAddressOutSideus_Address(jsonObj.getString("ISFORADD"));        // Check US address or Not
+                addbussinessinputmodel.setAddress_Address1(jsonObj.getString("ADD1"));
+                addbussinessinputmodel.setAddress_Address2(jsonObj.getString("ADD2"));
+                addbussinessinputmodel.setAddress_City(jsonObj.getString("CTY"));
+                addbussinessinputmodel.setAddressStateID(jsonObj.getString("SID"));                        // IF "US" Address
+
+                addbussinessinputmodel.setAddress_Stateorprovince(jsonObj.getString("SN"));    // IF "OutSide US" Address
+                addbussinessinputmodel.setAddressCountryId(jsonObj.getString("CID"));                    // IF "OutSide US" Address
+                addbussinessinputmodel.setAddress_Zipcode(jsonObj.getString("ZIP"));
+                addbussinessinputmodel.setAddress_Phonenumber(jsonObj.getString("PH"));
+
+
+                addbussinessinputmodel.setPrincipalOfcPhonenumber(jsonObj.getString("POPH"));
+
+                addbussinessinputmodel.setPrincipal_Address_Same_As_Business(jsonObj.getString("ISSAME"));        // Check Same Address or Not
+                addbussinessinputmodel.setPrincipal_Address_Outside_Us(jsonObj.getString("POISFORADD"));                    // Check US address or Not
+
+                addbussinessinputmodel.setPrincipalAddress1(jsonObj.getString("POADD1"));
+                addbussinessinputmodel.setPrincipalAddress2(jsonObj.getString("POADD2"));
+                addbussinessinputmodel.setPrincipalCity(jsonObj.getString("POCTY"));
+                addbussinessinputmodel.setPrincipalStateId(jsonObj.getString("POSID"));                    // IF "US" Address
+
+                addbussinessinputmodel.setPrincipalStateorProvince(jsonObj.getString("POSN"));    // IF "OutSide US" Address
+                addbussinessinputmodel.setPrincipalCountryId(jsonObj.getString("POCID"));                // IF "OutSide US" Address
+
+                addbussinessinputmodel.setPrincipalZipcode(jsonObj.getString("POZIP"));
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return addbussinessinputmodel;
+
+    }
+
+
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Common_Titile_Bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/rejectedbyirstextview"
+            style="@style/HeaderTextStyle"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="Rejected by the IRS " />
+
+
+        <ImageView
+            android:id="@+id/closbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/close_icon"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/cautionborder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/subTitleTextView"
+                android:text="@string/Error_Message"
+                android:textColor="@color/red" />
+
+
+            <android.support.v7.widget.CardView style="@style/Border">
+
+                <LinearLayout
+                    android:id="@+id/Error_layout"
+                    style="@style/Border2"
+                    android:orientation="vertical"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Dashboardlisteven"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/errorcodetextview"
+                            style="@style/TextViewStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="@string/Error_Code" />
+
+                        <View style="@style/vertical_line_style" />
+
+                        <TextView
+                            android:id="@+id/errormessagetextview"
+                            style="@style/TextViewStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:text="@string/Error_Message" />
+
+                        <View style="@style/vertical_line_style" />
+
+
+                        <TextView
+                            android:id="@+id/erroractiontextview"
+                            style="@style/TextViewStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="@string/Action" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rejectedlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

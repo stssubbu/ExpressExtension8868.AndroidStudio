@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView style="@style/Border">
+
+        <LinearLayout
+            style="@style/Border2"
+            android:gravity="left"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ItemA"
+                style="@style/ValueTextView"
+                android:padding="7dp"
+                android:text="@string/icon_pdf_view"
+                tools:ignore="HardcodedText" />
+
+            <View
+                style="@style/horizantal_line_style"
+                android:layout_height="1dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:id="@+id/ItemB"
+                style="@style/ValueTextView"
+                android:padding="7dp"
+                android:text="@string/icon_email_view"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

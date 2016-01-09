@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Tentative_Tax_and_Payments" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+
+                    <LinearLayout
+                        android:id="@+id/form"
+                        style="@style/Border2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                style="@style/LabelTextView"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:text="@string/Estimated_Tax" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.65"
+                                android:orientation="horizontal">
+
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/estimatedTax_EditText"
+                                    style="@style/material_edittext_style"
+                                    android:layout_margin="0dp"
+                                    android:ems="8"
+                                    android:gravity="right"
+                                    android:hint="0"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLength="15"
+                                    android:nextFocusForward="@+id/organizationnameedittext"
+                                    android:paddingLeft="3dp"
+                                    android:paddingRight="3dp"
+                                    android:singleLine="true"
+                                    app:met_floatingLabel="none" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/LabelTextView"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:text="@string/Payments_made" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.65"
+                                android:orientation="horizontal">
+
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/payment_made_EditText"
+                                    style="@style/material_edittext_style"
+                                    android:layout_margin="0dp"
+                                    android:ems="8"
+                                    android:gravity="right"
+                                    android:hint="0"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLength="15"
+                                    android:nextFocusForward="@+id/organizationnameedittext"
+                                    android:paddingLeft="3dp"
+                                    android:paddingRight="3dp"
+                                    android:singleLine="true"
+                                    app:met_floatingLabel="none" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/grayline_gradien" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/LabelTextView"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:text="@string/Balance_Due" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.65"
+                                android:orientation="horizontal">
+
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/balanceDue_EditText"
+                                    style="@style/material_edittext_style"
+                                    android:layout_margin="0dp"
+                                    android:digits="0123456789"
+                                    android:ems="8"
+                                    android:gravity="right"
+                                    android:hint="0"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLength="15"
+                                    android:nextFocusForward="@+id/organizationnameedittext"
+                                    android:paddingLeft="3dp"
+                                    android:paddingRight="3dp"
+                                    android:singleLine="true"
+                                    app:met_floatingLabel="none" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text2"
+                            style="@style/hintTextView"
+                            android:text="@string/Balance_Due_hint" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/BDCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/BDnext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETnextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

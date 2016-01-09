@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/irsformlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/rootlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/subTitleTextView"
+                        android:text="IRS Tax Form" />
+
+                    <android.support.v7.widget.CardView
+                        style="@style/Border"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:id="@+id/form"
+                            style="@style/Border2"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/selectformtextview"
+                                style="@style/ValueTextView"
+                                android:padding="0dp"
+                                android:text="@string/form_selection" />
+
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/formspinner"
+                                style="@style/material_edittext_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/Select_Form"
+                                android:padding="0dp"
+                                app:met_floatingLabel="normal" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/orgtaxyearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/subTitleTextView"
+                        android:text="Organization Tax Year" />
+
+                    <android.support.v7.widget.CardView
+                        style="@style/Border"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            style="@style/Border2"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RadioGroup
+                                    android:id="@+id/taxYearRadioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/currentaxyearradio"
+                                        style="@style/RadioButtonStyle"
+                                        android:checked="true"
+                                        android:text="@string/current_taxyear" />
+
+                                    <RadioButton
+                                        android:id="@+id/prevtaxyearradio"
+                                        style="@style/RadioButtonStyle"
+
+                                        android:text="@string/Previous_TaxYear" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <View style="@style/horizantal_line_style" />
+
+
+                            <LinearLayout
+                                android:id="@+id/corporationlinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:id="@+id/insidevertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/taxlayouthorizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/whatisyourtaxyeartextview"
+                                            style="@style/ValueTextView"
+
+                                            android:text="@string/what_is_org_year" />
+
+                                        <LinearLayout
+                                            android:id="@+id/taxlayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:padding="1dp"
+                                            android:weightSum="1">
+
+                                            <RadioGroup
+                                                android:id="@+id/currentYearRadioGroup"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <RadioButton
+                                                    android:id="@+id/currenttaxyearTextview"
+                                                    style="@style/RadioButtonStyle"
+                                                    android:checked="true"
+                                                    android:text="@string/current_taxyear" />
+
+                                                <RadioButton
+                                                    android:id="@+id/fiscaltaxyearTextView"
+                                                    style="@style/RadioButtonStyle"
+                                                    android:text="@string/Fiscal_TaxYear" />
+                                            </RadioGroup>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".5"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:id="@+id/begin"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_marginLeft="120dp"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    style="@style/LabelTextView"
+                                                    android:layout_marginRight="10dp"
+                                                    android:text="Tax Year Begin Date:" />
+
+                                                <com.rengwuxian.materialedittext.MaterialEditText
+                                                    android:id="@+id/begindateTextview"
+                                                    style="@style/material_edittext_style"
+                                                    android:layout_height="wrap_content"
+                                                    android:editable="false"
+                                                    android:ems="8"
+                                                    android:focusable="false"
+                                                    android:focusableInTouchMode="false"
+                                                    android:gravity="center_horizontal"
+                                                    android:inputType="date"
+                                                    android:maxLength="10"
+                                                    android:singleLine="true"
+                                                    app:met_iconPadding="0dp"
+                                                    app:met_iconRight="@drawable/dateiconblack" />
+
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:id="@+id/end"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_marginLeft="120dp"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    style="@style/LabelTextView"
+                                                    android:layout_marginLeft="13dp"
+                                                    android:layout_marginRight="10dp"
+                                                    android:text="Tax Year End Date:" />
+
+                                                <com.rengwuxian.materialedittext.MaterialEditText
+                                                    android:id="@+id/enddateTextview"
+                                                    style="@style/material_edittext_style"
+                                                    android:layout_height="wrap_content"
+                                                    android:editable="false"
+                                                    android:ems="8"
+                                                    android:focusable="false"
+                                                    android:focusableInTouchMode="false"
+                                                    android:gravity="center_horizontal"
+                                                    android:inputType="date"
+                                                    android:maxLength="10"
+                                                    android:singleLine="true"
+                                                    app:met_iconPadding="0dp"
+                                                    app:met_iconRight="@drawable/dateiconblack" />
+
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/reasonlayout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight=".5"
+                                            android:gravity="center_vertical"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <TextView
+                                                android:id="@+id/selectoption"
+                                                style="@style/ValueTextView"
+                                                android:layout_marginTop="5dp"
+                                                android:text="@string/reson_for_shorttaxyear" />
+
+                                            <LinearLayout
+                                                android:id="@+id/otherreasonvertical"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:gravity="center|left"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:id="@+id/initialhorizontal"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="5dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/IntialcheckBox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/Initial_Return" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/finalhorizontal"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="2dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/FinalReturncheckBox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/Final_Return" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/changehorizontal"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="2dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/AccountingCheckbox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/changing_acc" />
+
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/prevtaxyearlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:id="@+id/previnsidevertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/prevwhatisyourtaxyeartextview"
+                                            style="@style/ValueTextView"
+                                            android:text="@string/what_is_org_year" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:padding="1dp"
+                                            android:weightSum="1">
+
+                                            <LinearLayout
+                                                android:id="@+id/prevfiscaltaxyear"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight=".4"
+                                                android:gravity="center">
+
+                                                <RadioButton
+                                                    android:id="@+id/prevfiscaltaxyearTextView"
+                                                    style="@style/RadioButtonStyle"
+                                                    android:checked="true"
+                                                    android:enabled="false"
+                                                    android:text="@string/Fiscal_TaxYear" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".5"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_marginLeft="120dp"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_vertical">
+
+                                                    <TextView
+                                                        style="@style/LabelTextView"
+                                                        android:layout_marginRight="10dp"
+                                                        android:text="Tax Year Begin Date:" />
+
+                                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                                        android:id="@+id/prevbegindateTextview"
+                                                        style="@style/material_edittext_style"
+                                                        android:layout_height="wrap_content"
+                                                        android:editable="false"
+                                                        android:ems="8"
+                                                        android:focusable="false"
+                                                        android:focusableInTouchMode="false"
+                                                        android:gravity="center_horizontal"
+                                                        android:inputType="date"
+                                                        android:maxLength="10"
+                                                        android:singleLine="true"
+                                                        app:met_iconPadding="0dp"
+                                                        app:met_iconRight="@drawable/dateiconblack" />
+
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_marginLeft="120dp"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <LinearLayout
+                                                    android:id="@+id/err1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical">
+
+                                                    <TextView
+                                                        style="@style/LabelTextView"
+                                                        android:layout_marginLeft="13dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:text="Tax Year End Date:" />
+
+                                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                                        android:id="@+id/prevenddateTextview"
+                                                        style="@style/material_edittext_style"
+                                                        android:layout_height="wrap_content"
+                                                        android:editable="false"
+                                                        android:ems="8"
+                                                        android:focusable="false"
+                                                        android:focusableInTouchMode="false"
+                                                        android:gravity="center_horizontal"
+                                                        android:inputType="date"
+                                                        android:maxLength="10"
+                                                        android:singleLine="true"
+                                                        app:met_iconPadding="0dp"
+                                                        app:met_iconRight="@drawable/dateiconblack" />
+
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/prevreasonlayout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight=".5"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <TextView
+                                                android:id="@+id/prevselectoption"
+                                                style="@style/ValueTextView"
+                                                android:layout_marginTop="5dp"
+                                                android:text="@string/reson_for_shorttaxyear" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:gravity="center|left"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="5dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/prevIntialcheckBox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/Initial_Return" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="2dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/prevFinalReturncheckBox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/Final_Return" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="2dp">
+
+                                                    <CheckBox
+                                                        android:id="@+id/prevAccountingCheckbox"
+                                                        style="@style/CheckboxStyle"
+                                                        android:text="@string/changing_acc" />
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/taxyearCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/taxyearCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/taxyearnext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/taxyearnextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
+

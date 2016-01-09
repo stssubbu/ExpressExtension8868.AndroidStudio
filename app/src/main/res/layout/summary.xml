@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/subTitleTextView"
+                    android:text="@string/exempt_organization_details" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout
+                        style="@style/Border2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sum_orgName"
+                                style="@style/ValueTextView" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/White"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/LabelTextView"
+                                    android:text="@string/_ein_" />
+
+
+                                <TextView
+                                    android:id="@+id/sum_orgEIN"
+                                    style="@style/ValueTextView"
+                                    android:layout_marginLeft="5dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/sum_orgAddress"
+                                style="@style/ValueTextView"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.4"
+                            android:gravity="right|top"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/sum_orgEditButton"
+                                style="@style/EditButtonSyle" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/sum_orgViewButton"
+                                style="@style/ThirdButtonStyle"
+                                android:layout_gravity="bottom|right"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:id="@+id/sum_orgViewButtonText"
+                                    style="@style/card_button_text"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/View" />
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/text2"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Form_summary" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout style="@style/Border2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.6"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Form_to_be_extended" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_fromExteded"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Tax_Year_for_the_Organization_is" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_orgTaxYear"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Tax_Period" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_fromTaxPeriod"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0.4"
+                                android:gravity="right|top"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/sum_formEditButton"
+                                    style="@style/EditButtonSyle" />
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/sum_formViewButton"
+                                    style="@style/ThirdButtonStyle"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/sum_formViewButtonText"
+                                        style="@style/card_button_text"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="@string/View" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.6"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Actual_Due_Date" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_FormActDueDate"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Extended_Due_Date" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_fromExtedDueDate"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4"
+                                android:gravity="right|top"
+                                android:orientation="vertical">
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View style="@style/horizantal_line_style" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.6"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Type_of_Extension" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_FormExtensionType"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0.4"
+                                android:gravity="right|top"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/sum_typeEditButton"
+                                    style="@style/EditButtonSyle" />
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/sum_typeViewButton"
+                                    style="@style/ThirdButtonStyle"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/sum_typeViewButtonText"
+                                        style="@style/card_button_text"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="@string/View" />
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/text3"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Other_Details" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout style="@style/Border2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.6"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/sum_otherDetails"
+                                    style="@style/ValueTextView"
+                                    android:layout_marginLeft="5dp" />
+
+                                <LinearLayout
+                                    android:id="@+id/sum_GENLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Group_Exemption_Number" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_GEN"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/sum_PartofGroupLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Part_of_Group" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_Part_of_Group"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0.4"
+                                android:gravity="right|top"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/sum_otherEditButton"
+                                    style="@style/EditButtonSyle" />
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/sum_otherVeiwButton"
+                                    style="@style/ThirdButtonStyle"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/sum_otherViewButtonText"
+                                        style="@style/card_button_text"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="@string/View" />
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/text4"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Books_are_in_thecare_of_Details" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout
+                        style="@style/Border2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sum_bprincipalName"
+                                style="@style/ValueTextView" />
+
+
+                            <TextView
+                                android:id="@+id/sum_bprincipalAddress"
+                                style="@style/ValueTextView" />
+
+                            <TextView
+                                android:id="@+id/sum_bprincipalCity"
+                                style="@style/ValueTextView"
+                                android:padding="0dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.4"
+                            android:gravity="right|top"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/sum_bprincipalEditButton"
+                                style="@style/EditButtonSyle" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/sum_bprincipalViewButton"
+                                style="@style/ThirdButtonStyle"
+                                android:layout_gravity="bottom|right"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:id="@+id/sum_bprincipalViewtButtonText"
+                                    style="@style/card_button_text"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/View" />
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/text5"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Tax_and_Payments" />
+
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout style="@style/Border2">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.6"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Tentative_Tax_Amount" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_taxTentativeAmount"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Credit_Amount" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_taxCreditAmount"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/White"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/LabelTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:text="@string/Balance_Due_val" />
+
+
+                                    <TextView
+                                        android:id="@+id/sum_taxBalanceAmount"
+                                        style="@style/ValueTextView"
+                                        android:layout_width="0dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="4" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0.4"
+                                android:gravity="right|top"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/sum_taxEditButton"
+                                    style="@style/EditButtonSyle" />
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/sum_taxViewButton"
+                                    style="@style/ThirdButtonStyle"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/sum_taxViewButtonText"
+                                        style="@style/card_button_text"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="@string/View" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/SummaryCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/SummaryCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/SummaryReview"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/SummaryReviewText"
+                    style="@style/card_button_text"
+                    android:text="@string/Review" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

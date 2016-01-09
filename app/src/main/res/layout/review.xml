@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/wholeNoErrorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout
+                            style="@style/Border2"
+                            android:background="@color/successt_bg"
+                            android:gravity="center"
+                            android:padding="1dp">
+
+                            <TextView
+                                style="@style/subTitleTextView"
+                                android:layout_gravity="center"
+                                android:textColor="@color/greenEnd"
+                                android:text="@string/Whole_No_Error" />
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:text="@string/Whole_No_Error1" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout
+                            style="@style/Border2"
+                            android:padding="1dp">
+
+                            <TextView
+                                android:id="@+id/text3"
+                                style="@style/ValueTextView"
+                                android:text="@string/Disclaimer" />
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:text="@string/Disclaimer_Text" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wholeErrorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/subTitleTextView"
+                        android:text="@string/Error_Message"
+                        android:textColor="@color/red" />
+
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout
+                            android:id="@+id/Error_layout"
+                            style="@style/Border2"
+                            android:padding="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:background="@color/Dashboardlisteven"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/Error_Code" />
+
+                                <View style="@style/vertical_line_style" />
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="@string/Error_Message" />
+
+                                <View style="@style/vertical_line_style" />
+
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/Action" />
+                            </LinearLayout>
+
+                            <View style="@style/vertical_line_style" />
+
+                            <com.span.expressextension8868.utils.utility.ExpandableHeightListView
+                                android:id="@+id/errorlist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/NoError_layout"
+                            style="@style/Border2"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:text="@string/AuditSuccess" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/subTitleTextView"
+                        android:text="@string/Caution_Messages"
+                        android:textColor="@color/ET_ErrorColor" />
+
+
+                    <android.support.v7.widget.CardView style="@style/Border">
+
+                        <LinearLayout
+                            android:id="@+id/caution_layout"
+                            style="@style/Border2"
+                            android:padding="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:background="@color/Dashboardlisteven"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/Error_Code" />
+
+                                <View style="@style/vertical_line_style" />
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="@string/Error_Message" />
+
+                                <View style="@style/vertical_line_style" />
+
+
+                                <TextView
+                                    style="@style/ValueTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/Action" />
+                            </LinearLayout>
+
+                            <View style="@style/vertical_line_style" />
+
+                            <com.span.expressextension8868.utils.utility.ExpandableHeightListView
+                                android:id="@+id/cautionList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/NoCaution_layout"
+                            style="@style/Border2"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/ValueTextView"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:text="@string/AuditCautionSuccess" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ReviewCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ReviewCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ReviewNext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ReviewNextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

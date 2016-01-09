@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent1">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="class_zero_background">#7f040000</color>
+    <color name="light">#ffffff</color>
+    <color name="transparent">#00EEEEEE</color>
+    <color name="titleblue">#2958a6</color>
+    <color name="greenStart">#ff33dd44</color>
+    <color name="greenMid">#FF0000</color>
+    <color name="greenEnd">#ff1da130</color>
+    <color name="Background">#40666666</color>
+    <color name="orange">#FF9912</color>
+    <color name="blue">#0101DF</color>
+    <color name="rose">#FF00BF</color>
+    <color name="beforeloginblue">#031637</color>
+    <color name="homepagetexticon">#2958a6</color>
+    <color name="darkgrey">#2b2b2b</color>
+    <color name="lightgrey">#DCDFE2</color>
+    <color name="leftSide">#f6f6f6</color>
+    <color name="customer_color">#80b116</color>
+    <color name="contact_color">#e08213</color>
+    <color name="lead_color">#8e1b5c</color>
+    <color name="call_color">#b345e6</color>
+    <color name="inactive_color">#a5a5a5</color>
+    <color name="tm_color">#a60a0a</color>
+    <color name="xtm_color">#ebc807</color>
+    <color name="allcontacts_color">#1681cc</color>
+    <color name="theme_color">#1c1c1c</color>
+    <color name="invoice_bar">#5095c5e6</color>
+    <color name="invoice_text">#2E6492</color>
+    <color name="Pdf_bg">#1884ce</color>
+    <color name="edit_bg">#0c6daf</color>
+    <color name="Yellow">#ffc001</color>
+    <color name="Orange">#ff6c00</color>
+    <color name="Violet">#4a44b0</color>
+    <color name="Black">#000000</color>
+    <color name="White">#F5F5F5</color>
+    <color name="BalanceRed">#a31212</color>
+    <color name="AgendaLayout">#003333</color>
+    <color name="Grey">#666666</color>
+    <color name="managebusinessgrey">#313131</color>
+    <color name="MediumBlack">#212121</color>
+    <color name="businessList">#d9ebf6</color>
+    <color name="lightblue">#085486</color>
+    <color name="thickblue">#1965c8</color>
+    <color name="linecolor">#797777</color>
+
+    <color name="textSelected">#353535</color>
+
+
+    <!-- New -->
+
+    <color name="listselector">#88c4e6</color>
+
+    <color name="DashboardList">#c7e3f3</color>
+    <color name="SelectBusinessName">#143a6d</color>
+    <color name="SelectEinNumber">#ed7c18</color>
+    <color name="BusinessNameNormal">#ffffff</color>
+    <color name="EinNumberNormal">#125F76</color>
+    <color name="DashBoardName">#454545</color>
+    <color name="BusinessDatilsBackground">#143E6D</color>
+    <color name="SearchBackGround">#096d91</color>
+    <color name="BusinessDetails_BName">#365ebf</color>
+    <color name="BusinessFirstUsedMonth">#adadad</color>
+    <color name="BusinessDetails_Address">#313131</color>
+    <color name="BusinessDetails_Bg">#143e6d</color>
+    <color name="BusinessDetails_Title">#aeb8c1</color>
+    <color name="FUMHeading">#365ebf</color>
+    <color name="BusinessEin">#fc8012</color>
+    <color name="CurrentYearBackGround">#f0f4f8</color>
+    <color name="CurrentYear">#3e3e3e</color>
+    <color name="TaxYear">#ec7c1d</color>
+    <color name="DueDateText">#7b7b7b</color>
+    <color name="DueDateFUM">#2b5f9b</color>
+    <color name="DashboardListPressed">#d9ebf7</color>
+    <color name="Dashboardlistodd">#D9EBF6</color>
+    <color name="Dashboardlisteven">#c8e3f4</color>
+    <color name="blusend">#0774AC</color>
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#F5F5F5</color>
+
+
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+
+    <!-- Return Status Color -->
+
+    <color name="Returngrey">#bbbbbb</color>
+    <color name="Returnyellow">#dac011</color>
+    <color name="Returngreen">#21ad20</color>
+    <color name="Returnred">#ed1818</color>
+    <color name="ReturnBlue">#0c4da2</color>
+
+    <!--edittext material color-->
+    <color name="ET_BaseColor">#0056d3</color>
+    <color name="ET_PrimaryColor">#982360</color>
+    <color name="ET_ErrorColor">#ddaa00</color>
+    <color name="ET_FloatTextColor">#001eff</color>
+
+    <color name="snack_bg_color">#BF2181d3</color>
+    <color name="total_fee_bg">#446bca</color>
+
+    <color name="Common_Titile_Bg">#282878</color>
+    <color name="Common_PrimaryButton_Bg">#282878</color>
+    <color name="Common_SecondaryButton_Bg">#E30512</color>
+    <color name="Common_ThirdButton_Bg">#2181d3</color>
+    <color name="Common_CancelButton_Bg">#7B7B7B</color>
+
+    <color name="Common_EditText_OutFocus_Bg">#282878</color>
+    <color name="Common_EditText_Hint_OutFocus_Bg">#9c9c9c</color>
+    <color name="Common_SubHeader_Text_Fg">#282878</color>
+    <color name="Common_Label_Text_Fg">#3f3f3f</color>
+    <color name="Common_Border_Bg">#b1b1cd</color>
+    <color name="Common_subHeader_FG">#282878</color>
+    <color name="Common_Header_Right_FG">#d9d9d9</color>
+    <color name="Forgot_pswd_FG">#2463AA</color>
+
+    <color name="Listview_Bg">#2181d3</color>
+
+    <color name="listview_active_Fg">#2181d3</color>
+    <color name="successt_bg">#e8f6e8</color>
+
+</resources>

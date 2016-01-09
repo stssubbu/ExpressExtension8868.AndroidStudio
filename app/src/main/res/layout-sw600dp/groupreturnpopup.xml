@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/Border"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            style="@style/Border2"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <FrameLayout
+                android:id="@+id/headerhorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35.0dip"
+                android:background="@color/Common_Titile_Bg">
+
+
+                <TextView
+                    android:id="@+id/addholdingcompanylist"
+                    style="@style/HeaderTextStyle"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/Add_Part_Of_Group" />
+
+
+                <ImageView
+                    android:id="@+id/closeicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/closeicon" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/White"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/addgrouplayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.19"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BusinessNameeditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_organization_name_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="33"
+                                        android:nextFocusForward="@+id/EineditText"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/EineditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_ein_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="10"
+                                        android:nextFocusForward="@+id/addressEdittext1"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/addressoutsidehorizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+                                    <CheckBox
+                                        android:id="@+id/isaddoutsidecheckbox"
+                                        style="@style/CheckboxStyle"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/is_the_address_outside_us_" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/addressEdittext1"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_address_1_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+                                        android:nextFocusForward="@+id/addresseditText2"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="invisible" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/addresseditText2"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_address_2_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/cityeditText" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/cityeditText"
+
+                                        style="@style/material_edittext_style"
+                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                        android:ems="15"
+                                        android:hint="@string/_city"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="22"
+                                        android:nextFocusForward="@+id/zipeditText"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/stateorprovince"
+                                        style="@style/material_edittext_style"
+                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                        android:ems="15"
+                                        android:hint="@string/_state_or_province_"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="17"
+                                        android:singleLine="true"
+                                        android:visibility="gone" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/stateSpinner"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="State"
+                                        app:met_floatingLabel="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/countrySpinnerLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red"
+                                        android:visibility="visible" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/countrySpinner"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:ems="15"
+                                        android:hint="Country"
+                                        app:met_floatingLabel="normal" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/zipeditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="15"
+                                        android:hint="@string/_zip_code"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="10"
+                                        android:singleLine="true" />
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/addButton"
+                                    style="@style/PrimaryButtonStyle"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:layout_marginTop="15dp">
+
+                                    <TextView
+                                        android:id="@+id/addButtonText"
+                                        style="@style/card_button_text"
+                                        android:text="@string/Add" />
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <View style="@style/vertical_line_style" />
+
+                    <LinearLayout
+                        android:id="@+id/listlayout"
+                        android:layout_width="700dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/popuptext1"
+                            style="@style/subTitleTextView"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/List_Of_Part_Of_Group" />
+
+                        <LinearLayout
+                            android:id="@+id/listvertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:background="#555555"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <TextView
+
+                                    android:id="@+id/businessName"
+                                    style="@style/HeaderTextStyle"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="0.40"
+                                    android:text="@string/orgEin" />
+
+                                <TextView
+                                    android:id="@+id/AddressHeader"
+                                    style="@style/HeaderTextStyle"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/Address" />
+
+                                <TextView
+                                    android:id="@+id/ActionViewListheader"
+                                    style="@style/HeaderTextStyle"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="0.54"
+                                    android:text="@string/Action" />
+                            </LinearLayout>
+
+                            <ListView
+                                android:id="@+id/holdinglistView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"></ListView>
+
+                            <LinearLayout
+                                android:id="@+id/norecordsfound"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/back_disabled"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    style="@style/ValueTextView"
+                                    android:layout_gravity="center"
+                                    android:text="@string/No_Records_Found" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

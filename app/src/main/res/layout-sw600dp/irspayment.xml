@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#2c8fae"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="IRS PAYMENT"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/allSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/settingswhite" />
+
+            <TextView
+                android:id="@+id/cancelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/toplefticon"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/home_headerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                layout="@layout/leftprogress" />
+
+            <LinearLayout
+                android:id="@+id/rightsidecontent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:background="@color/White"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/scrollcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/wholecontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/radioh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="1" >
+
+                            <LinearLayout
+                                android:id="@+id/irsradiowrap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/borderstroke"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:id="@+id/paybyelectronicFundsradioButtonlayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight=".5"
+                                    android:background="#2c8fae"
+                                    android:orientation="vertical" >
+
+                                    <RadioButton
+                                        android:id="@+id/paybyelectronicFundsradioButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="37dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:button="@null"
+                                        android:drawableLeft="@drawable/newradiobutton"
+                                        android:drawablePadding="5dp"
+                                        android:padding="5dp"
+                                        android:text="I will pay by Electronic Funds Withdrawal (EFW)"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/White" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/view1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#2687a5" />
+
+                                <View
+                                    android:id="@+id/view2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#3e9fbe" />
+
+                                <LinearLayout
+                                    android:id="@+id/paybymoneyorderradiolayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight=".5"
+                                    android:background="#2c8fae"
+                                    android:orientation="vertical" >
+
+                                    <RadioButton
+                                        android:id="@+id/paybymoneyorderradio"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="37dp"
+                                        android:button="@null"
+                                        android:layout_marginLeft="5dp"
+                                        android:drawableLeft="@drawable/newradiobutton"
+                                        android:drawablePadding="5dp"
+                                        android:padding="5dp"
+                                        android:text="EFTPS"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/White" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/insidefundswithdrawal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/listbottomblue"
+                                android:orientation="vertical"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:id="@+id/belowinsidefundswithdrawal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="vertical"
+                                    android:padding="5dp"
+                                    android:visibility="visible" >
+
+                                    <LinearLayout
+                                        android:id="@+id/electronicFundsInsideLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical" >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal" >
+
+                                            <TextView
+                                                android:id="@+id/AccounttypeTextView"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="5dp"
+                                                android:text="*Account Type:"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="@color/Black"
+                                                android:visibility="visible" />
+
+                                            <LinearLayout
+                                                android:id="@+id/accounttypelayoutradio"
+                                                android:layout_width="300dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="5dp"
+                                                android:padding="1dp"
+                                                android:weightSum="1" >
+
+                                                <LinearLayout
+                                                    android:id="@+id/Checkingaccount"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight=".5"
+                                                    android:background="@drawable/segmentedblueborderone"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical" >
+
+                                                    <TextView
+                                                        android:id="@+id/CheckingaccountTextview"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="match_parent"
+                                                        android:gravity="center"
+                                                        android:padding="10dp"
+                                                        android:text="Checking"
+                                                        android:textColor="#808080"
+                                                        android:textSize="15dp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/savingaccount"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight=".5"
+                                                    android:background="@drawable/segmentedbluebordertwo"
+                                                    android:gravity="center" >
+
+                                                    <TextView
+                                                        android:id="@+id/savingaccountTextView"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginRight="2dp"
+                                                        android:gravity="center"
+                                                        android:padding="10dp"
+                                                        android:text="Saving"
+                                                        android:textColor="#808080"
+                                                        android:textSize="15dp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <TableLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TableRow
+                                                android:id="@+id/bankaccountpart1vert"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                
+                                                android:orientation="horizontal" >
+
+                                                <TextView
+                                                    android:id="@+id/accountnumbertextview"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="right"
+                                                    android:text="*Bank Account Number:"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:textColor="@color/Black" />
+
+                                                <EditText
+                                                    android:id="@+id/accountnumberedittext"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/listbottom"
+                                                    android:ems="10"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:imeOptions="actionNext"
+                                                    android:inputType="numberDecimal"
+                                                    android:maxLength="17"
+                                                    android:nextFocusForward="@+id/bankroutingnumberedittext"
+                                                    android:padding="5dp" >
+                                                </EditText>
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:id="@+id/bankroutingnumberpart2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                 android:orientation="horizontal" >
+
+                                                <TextView
+                                                    android:id="@+id/rountingnumbertextview"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="*Bank Routing Number:"
+                                                     android:gravity="right"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:textColor="@color/Black" />
+
+                                                <EditText
+                                                    android:id="@+id/bankroutingnumberedittext"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/listbottom"
+                                                    android:ems="10"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:imeOptions="actionNext"
+                                                    android:inputType="numberDecimal"
+                                                    android:maxLength="9"
+                                                    android:nextFocusForward="@+id/taxpayerphoneedittext"
+                                                    android:padding="5dp" >
+                                                </EditText>
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:id="@+id/taxpayerpart1vert"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal" >
+
+                                                <TextView
+                                                    android:id="@+id/taxpayertextview"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="65dp"
+                                                     android:gravity="right"
+                                                    android:text="*Taxpayer Day Time Phone:"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:textColor="@color/Black" />
+
+                                                <EditText
+                                                    android:id="@+id/taxpayerphoneedittext"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:background="@drawable/listbottom"
+                                                    android:ems="10"
+                                                    android:imeOptions="actionNext"
+                                                    android:inputType="numberSigned"
+                                                    android:maxLength="14"
+                                                    android:nextFocusForward="@+id/paymentdateedittext"
+                                                    android:padding="5dp" >
+                                                </EditText>
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:id="@+id/bankroutingnumberpart22"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                
+                                                
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal" >
+
+                                                <TextView
+                                                    android:id="@+id/paymentrequestdate"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                     android:gravity="right"
+                                                    android:text="*Payment Request Date:"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:textColor="@color/Black" />
+
+                                                <Button
+                                                    android:id="@+id/paymentdateedittext"
+                                                    android:layout_width="225dp"
+                                                    android:layout_height="33dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:background="@drawable/listbottom"
+                                                    android:ems="10"
+                                                    android:gravity="left|center_vertical"
+                                                    android:nextFocusForward="@+id/EFWPinEdittext"
+                                                    android:padding="5dp"
+                                                    android:textColor="@color/Black" >
+                                                </Button>
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:id="@+id/efwpinhorizontallayout"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                
+                                                android:orientation="horizontal" >
+
+                                                <TextView
+                                                    android:id="@+id/EFWpinTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="108dp"
+                                                    android:gravity="right"
+                                                    android:text="*Enter any 5 digit number as your EFW PIN:"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:textColor="@color/Black" />
+
+                                                <EditText
+                                                    android:id="@+id/EFWPinEdittext"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:layout_marginRight="0dp"
+                                                    android:background="@drawable/listbottom"
+                                                    android:digits="0123456789"
+                                                    android:ems="5"
+                                                    android:imeOptions="actionNext"
+                                                    android:inputType="numberDecimal"
+                                                    android:maxLength="5"
+                                                    android:padding="5dp" >
+                                                </EditText>
+                                            </TableRow>
+                                        </TableLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal" >
+
+                                        <CheckBox
+                                            android:id="@+id/electronicfundscheckbox"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:button="@drawable/logincheckboxstate" />
+
+                                        <TextView
+                                            android:id="@+id/electronicfundstextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="Electronic Funds Withdrawal Consent"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:textColor="@color/Black" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/electronicfundstexts"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="I authorize the U.S. Treasury and its designated Financial Agent to initiate an electronic funds withdrawal (direct debit) entry to the financial institution account indicated in the tax preparation software for payment of the taxpayer’s balance due on Form 7004, and the financial institution to debit the entry to this account. To revoke a payment, I must contact the U.S. Treasury Financial Agent at 1-888-353-4537 no later than 2 business days prior to the payment (settlement) date. I also authorize the financial institution involved in the processing of the electronic payment of taxes to receive confidential information necessary to answer inquiries and resolve issues related to the payment."
+                                        android:textColor="@color/Black" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/EFTPSLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bordertransparentblue"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:visibility="visible" >
+
+                                <TextView
+                                    android:id="@+id/EFTPSTexts"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="You can pay the tax due electronically to the IRS by visiting www.EFTPS.gov If you already have an account with EFTPS.GOV, it only takes minutes to pay the taxes. If you do not have an account with EFTPS.GOV, it will take about 15 business days to set one up. "
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#2c8fae" />
+
+                                <CheckBox
+                                    android:id="@+id/termsofcheckbox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@null"
+                                    android:drawableLeft="@drawable/logincheckboxstate"
+                                    android:drawablePadding="5dp"
+                                    android:padding="5dp"
+                                    android:text=" I accept that it is my responsibility to send the tax due payment to the IRS using eftps.gov website, FTDs or by other means."
+                                    android:textColor="@color/Black" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/cancelbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/back_new"
+                        android:drawableLeft="@drawable/larrownew"
+                        android:drawablePadding="5dp"
+                        android:gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Back"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/next_button"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/rarrownew"
+                        android:gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Next"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

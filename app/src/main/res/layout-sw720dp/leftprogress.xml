@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/FormInterviewtextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topfirstnotselected"
+        android:gravity="center"
+        android:text="Form Interview"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TaxDuetextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topnotselected"
+        android:gravity="center"
+        android:text="Books are In Care Of"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SummarytextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topnotselected"
+        android:gravity="center"
+        android:text="Summary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ReviewtextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topnotselected"
+        android:gravity="center"
+        android:text="Review"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/OurFeestextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topnotselected"
+        android:gravity="center"
+        android:text="Our fees"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TransmittotheIRStextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/topnotselected"
+        android:gravity="center"
+        android:text="Transmit to the IRS"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#353535"
+        android:textStyle="bold" />
+
+</LinearLayout>

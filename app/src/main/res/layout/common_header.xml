@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+
+        >
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Common_Titile_Bg"
+            android:isScrollContainer="false"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="10">
+
+
+                <FrameLayout
+                    android:id="@+id/top"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_weight="10">
+
+
+                    <TextView
+                        android:id="@+id/DashBoardTitle"
+                        style="@style/HeaderTextStyle"
+                        android:layout_gravity="center"
+                        android:text="@string/dashboardCaps"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/refresh" />
+
+                        <LinearLayout
+                            android:id="@+id/DashboardOrgDetailsLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:id="@+id/DashboardOrgName"
+                                style="@style/HeaderRightTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/DashboardOrgEin"
+                                style="@style/HeaderRightTextViewStyle" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/menu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:src="@drawable/settings" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/logolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/businesslistview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/drop" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="59dp"
+                    android:src="@drawable/logo_back1" />
+
+                <ImageView
+                    android:id="@+id/logolink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/header_logo1" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

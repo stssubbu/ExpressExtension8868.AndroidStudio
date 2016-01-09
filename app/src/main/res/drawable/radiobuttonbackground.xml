@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/radiodisableunchecked" android:state_checked="false" android:state_enabled="false" />
+    <item android:drawable="@drawable/radiodisblechecked" android:state_checked="true" android:state_enabled="false" />
+    <item android:drawable="@drawable/radiounchecked" android:state_checked="false" android:state_enabled="true" />
+    <item android:drawable="@drawable/radiochecked" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/radiounchecked" />
+    <!-- default -->
+
+</selector>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:layout_gravity="top"
+        android:background="@drawable/container_shadow"
+        android:padding="10dp" >
+        
+	<LinearLayout
+            android:id="@+id/linearLayout1"
+            android:paddingTop="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/SearchBackGround" >
+
+     
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Forgot Password"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lleww"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="2dp"
+            android:background="#70666666"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@+id/lleww" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Ok"
+                    android:textStyle="bold" 
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/emailtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="28dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Your new Password has been sent to your email address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    
+
+</FrameLayout>

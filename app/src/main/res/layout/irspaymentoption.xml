@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/subTitleTextView"
+                    android:text="@string/IRS_SubTitile" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    card_view:backgroundTint="@color/businessList"
+                    card_view:backgroundTintMode="src_atop"
+                    card_view:cardBackgroundColor="@color/Dashboardlisteven"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/White"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <RadioGroup
+                                android:id="@+id/paySelectRadioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/electronicFuneRadio"
+                                    style="@style/RadioButtonStyle"
+                                    android:checked="true"
+                                    android:text="@string/i_will_pay" />
+
+                                <RadioButton
+                                    android:id="@+id/EFTPSRadio"
+                                    style="@style/RadioButtonStyle"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="@string/EFTPS" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/horizantal_line_style" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ElectronicFundsLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                        android:id="@+id/BAccType"
+                                        style="@style/material_edittext_style"
+                                        android:hint="@string/Account_Type"
+                                        app:met_floatingLabel="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BAccNumberEditText"
+                                        style="@style/material_edittext_style"
+                                        android:hint="@string/Bank_Account_Number"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="17"
+                                        android:singleLine="true" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BRoutingNumberEditText"
+                                        style="@style/material_edittext_style"
+                                        android:hint="@string/Bank_Routing_Number"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="9"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/begindateTextview"
+                                        style="@style/material_edittext_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:editable="true"
+                                        android:ems="12"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:gravity="center_horizontal"
+                                        android:hint="@string/Request_Payment_Date"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="10"
+                                        android:singleLine="true"
+                                        app:met_iconPadding="0dp"
+                                        app:met_iconRight="@drawable/dateiconblack" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/BPhoneNumberEditText"
+                                        style="@style/material_edittext_style"
+                                        android:layout_height="wrap_content"
+                                        android:ems="11"
+                                        android:hint="@string/TaxPayer_Day_Time_Phone"
+                                        android:inputType="phone"
+                                        android:maxLength="14"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View style="@style/horizantal_dot_line_style" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="9">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/TextViewStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="@color/red" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/EWFPinEditText"
+                                        style="@style/material_edittext_style"
+                                        android:ems="16"
+                                        android:hint="@string/EFW_PIN"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="5"
+                                        app:met_floatingLabel="normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/EWF_PIN_CheckBox"
+                                    style="@style/CheckboxStyle"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/EFTPS_accept"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/hintTextView"
+                                    android:background="@color/White"
+                                    android:text="@string/Electronic_Funds_Condition" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/EFTPSLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                style="@style/hintTextView"
+                                android:background="@color/White"
+                                android:text="@string/EFTPS_helpText" />
+
+                            <CheckBox
+                                android:id="@+id/EFTPAcceptcheckBox"
+                                style="@style/CheckboxStyle"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/EFTPS_accept"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/IRSCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/IRSnext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/ETnextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

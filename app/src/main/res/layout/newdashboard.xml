@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.ExpressExtension.Controller.DashboardActivity">
+
+    <FrameLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/wholevertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="@color/White"
+            android:orientation="vertical" />
+
+        <include
+            layout="@layout/common_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/businesslistlayout"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/Common_Titile_Bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/listfilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_current"
+                android:drawableLeft="@drawable/searchicon"
+                android:drawablePadding="10dp"
+                android:hint="Search by Organization name or EIN"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="12sp"></EditText>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ListView
+                    android:id="@+id/businesslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+
+                <Button
+                    android:id="@+id/addnewbusinessdashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/myrect"
+                    android:drawableLeft="@drawable/addbusinessicon"
+                    android:padding="8dp"
+                    android:text="Add Organization"
+                    android:textColor="@color/Black"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/menulayout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/Common_Titile_Bg"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/aftermenulayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="10dp"
+                    android:text="Login Name"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/EmailAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#46A0FF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="#282878"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dip"
+                android:background="#35359e"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/addNewDashBoard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25.0dip"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ImageView03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/dashicon" />
+
+                        <TextView
+                            android:id="@+id/Dashboardlink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12.0dip"
+                            android:text="DashBoard"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#ffffffff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/addnewBusinessSupportLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip">
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/supporticon" />
+
+                        <TextView
+                            android:id="@+id/Support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12.0dip"
+                            android:text="Support"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#ffffffff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myAccount_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/myaccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/my_account" />
+
+                        <TextView
+                            android:id="@+id/cpaedit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="My Account"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#282878"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dip"
+                    android:background="#35359e"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/Logout_Layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/logoff"
+                        android:drawablePadding="10dp"
+                        android:text="Log Off"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#ffcecece"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    tools:context="com.ExpressExtension.Controller.NewuserCongratulations">
+
+    <android.support.v7.widget.CardView
+        style="@style/Border"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true">
+
+        <LinearLayout
+            style="@style/Border2"
+            android:layout_width="785dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/congrazText"
+                    style="@style/HeaderTextStyle"
+                    android:gravity="center"
+
+                    android:text="@string/congratulationsheader"
+                    android:textColor="@color/Common_Titile_Bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/White"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/Border"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+
+                    <LinearLayout
+                        style="@style/Border2"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            style="@style/ValueTextView"
+                            android:layout_gravity="center"
+                            android:text="@string/congratstext" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            style="@style/ValueTextView"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/congratstext2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/NewuserLoginalertButton"
+                    style="@style/PrimaryButtonStyle"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:id="@+id/buttonText"
+                        style="@style/card_button_text"
+                        android:text="BEGIN" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

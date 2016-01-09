@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#2c8fae"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="TAX DUE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/allSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/settingswhite" />
+
+            <TextView
+                android:id="@+id/cancelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/toplefticon"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/home_headerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                layout="@layout/leftprogress" />
+
+            <LinearLayout
+                android:id="@+id/rightsidecontent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:background="@color/White"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/scrollcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/wholecontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+                        
+                        
+                        
+                        <LinearLayout
+                    android:id="@+id/BooksareinCareDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/titleheader"
+                        android:padding="10dp"
+                        android:text="BOOKS ARE IN THE CARE OF"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#7B7B7B" />
+
+                    <LinearLayout
+                        android:id="@+id/BusinessAddresTouchOutLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/myrect"
+                        android:orientation="vertical"
+                        android:paddingRight="2dp" >
+
+                        <TableLayout
+                            android:id="@+id/TableLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TableRow
+                                android:id="@+id/tableRow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="10dp" >
+
+                                <CheckBox
+                                    android:id="@+id/isbusinesscheckbox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:button="@null"
+                                    android:drawableLeft="@drawable/logincheckboxstate"
+                                    android:drawablePadding="5dp"
+                                    android:text="Is it a business?"
+                                    android:textColor="@color/Black" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="5dp" >
+
+                                <LinearLayout
+                                    android:id="@+id/namevertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/nameofpersontextview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="*Name of Person:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/nameofpersonedittext"
+                                        style="@style/edittextcommonstyle"
+                                        android:imeOptions="actionNext"
+                                    android:inputType="textCapWords"
+                                     android:maxLength="33"
+                                        android:layout_marginLeft="10dp" >
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/phonevertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/phonetextview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="*Phone: "
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/phoneedittext"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginLeft="5dp"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="14"
+                                         >
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/faxvertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/faxtext"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Fax Number:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/FaxNumberEditText"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/listbottom"
+                                        android:ems="12"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="numberSigned"
+                                        android:maxLength="14"
+                                        android:nextFocusForward="@+id/EmailAddressEditText"
+                                        android:padding="10dp"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#A6A6A8" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp" >
+
+                            <CheckBox
+                                android:id="@+id/bookisaddressoutside"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/logincheckboxstate"
+                                android:drawablePadding="5dp"
+                                android:text="Is the address outside US?"
+                                android:textColor="@color/Black" />
+
+                            <CheckBox
+                                android:id="@+id/isbusinessaddresssamecheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/logincheckboxstate"
+                                android:drawablePadding="5dp"
+                                android:text="Is this address same as your business address? "
+                                android:textColor="@color/Black" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#A6A6A8" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/addressline1textview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="*Address Line 1:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/bookaddressline1edittext"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="80dp"
+                                        android:background="@drawable/listbottom"
+                                        android:ems="12"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/Addr2EditText"
+                                        android:padding="10dp"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/addressline2textview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Address Line 2:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/bookaddressline2edittext"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="80dp"
+                                        android:background="@drawable/listbottom"
+                                        android:ems="12"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="35"
+                                        android:nextFocusForward="@+id/CityEditText"
+                                        android:padding="10dp"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/bookCityTextview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="*City:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <EditText
+                                        android:id="@+id/bookCityEditText"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="80dp"
+                                        android:background="@drawable/listbottom"
+                                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                        android:ems="12"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="22"
+                                        android:nextFocusForward="@+id/ZipCodeEditText"
+                                        android:padding="10dp"
+                                        android:singleLine="true" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/bookStateTextview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="*State:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="@color/Black" />
+
+                                    <Spinner
+                                        android:id="@+id/bookState"
+                                        android:layout_width="246dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/apptheme_spinner_background_holo_light"
+                                        android:textColor="@color/Black"
+                                        android:visibility="visible" />
+
+                                    <EditText
+                                        android:id="@+id/bookstateorprovince"
+                                        style="@style/edittextcommonstyle"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="80dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/listbottom"
+                                        android:ems="12"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="22"
+                                        android:nextFocusForward="@+id/ZipCodeEditText"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="5dp"
+                                        android:singleLine="true"
+                                        android:visibility="gone" >
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2" >
+
+                                    <LinearLayout
+                                        android:id="@+id/bookcountrylayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:visibility="gone" >
+
+                                        <TextView
+                                            android:id="@+id/bookCountryText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="*Select Country:"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:textColor="@color/Black"
+                                            android:visibility="visible" />
+
+                                        <Spinner
+                                            android:id="@+id/bookCountry"
+                                            android:layout_width="267dp"
+                                            android:layout_height="40dp"
+                                            android:background="@drawable/apptheme_spinner_background_holo_light"
+                                            android:maxLength="30"
+                                            android:padding="10dp"
+                                            android:visibility="visible" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/bookzipcodelayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:visibility="visible" >
+
+                                        <TextView
+                                            android:id="@+id/bookZipCodeTextview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="*ZIP Code:"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:textColor="@color/Black" />
+
+                                        <EditText
+                                            android:id="@+id/bookZipCodeEditText"
+                                            style="@style/edittextcommonstyle"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/listbottom"
+                                            android:ems="12"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="numberSigned"
+                                            android:maxLength="10"
+                                            android:nextFocusForward="@+id/PhoneNumberEditText"
+                                            android:padding="10dp"
+                                            android:singleLine="true" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="-11dp"
+                        android:background="@drawable/shadow" />
+                </LinearLayout>
+                        <LinearLayout
+                    android:id="@+id/SigningAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/titleheader"
+                        android:padding="10dp"
+                        android:text="SIGNING AUTHORITY"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#7B7B7B" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/myrect"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/primarynameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:text="*Name:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Black" />
+
+                            <EditText
+                                android:id="@+id/primarynameEditText"
+                                style="@style/edittextcommonstyle"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@drawable/listbottom"
+                                android:ems="12"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:maxLength="35"
+                                android:nextFocusForward="@+id/TitleEditText"
+                                android:padding="5dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TitleBusinessText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:text="*Title:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Black" />
+
+                            <EditText
+                                android:id="@+id/TitleEditText"
+                                style="@style/edittextcommonstyle"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@drawable/listbottom"
+                                android:ems="12"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:maxLength="35"
+                                android:nextFocusForward="@+id/primaryphoneEditText"
+                                android:padding="5dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/daytimephonenumbertextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:text="*Day Time Phone:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Black" />
+
+                            <EditText
+                                android:id="@+id/primaryphoneEditText"
+                                style="@style/edittextcommonstyle"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@drawable/listbottom"
+                                android:ems="12"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberSigned"
+                                android:maxLength="14"
+                                android:padding="5dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                        
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/cancelbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/back_new"
+                        android:drawableLeft="@drawable/larrownew"
+                        android:drawablePadding="5dp"
+                        android:gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Back"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/next_button"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/rarrownew"
+                        android:gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Next"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

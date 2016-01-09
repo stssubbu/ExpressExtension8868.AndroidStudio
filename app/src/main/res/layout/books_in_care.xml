@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:id="@+id/WholeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    style="@style/subTitleTextView"
+                    android:text="@string/Books_are_in_care" />
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout style="@style/Border2">
+
+                        <CheckBox
+                            android:id="@+id/BCIsBusinessCheckBox"
+                            style="@style/CheckboxStyle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/is_it_a_business" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCNameOfPersonEditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/Name_of_person"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="33"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/BCIsSameAddress"
+                            style="@style/CheckboxStyle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/is_this_address_same_as_your_business_address_" />
+
+
+                        <CheckBox
+                            android:id="@+id/BCOusideAddressCheckBox"
+                            style="@style/CheckboxStyle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/is_the_address_outside_us_" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCAddress1Edittext1"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/_address_1_"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="35"
+                                    android:nextFocusForward="@+id/addresseditText2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red"
+                                    android:visibility="invisible" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCAddresse2ditText2"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/_address_2_"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="35"
+                                    android:nextFocusForward="@+id/cityeditText" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCCityeditText"
+
+                                    style="@style/material_edittext_style"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:ems="15"
+                                    android:hint="@string/_city"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="22"
+                                    android:nextFocusForward="@+id/zipeditText"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCStateorprovinceEdit"
+                                    style="@style/material_edittext_style"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:ems="15"
+                                    android:hint="@string/_state_or_province_"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="17"
+                                    android:singleLine="true"
+                                    android:visibility="gone" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/BCStateSpinner"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="State"
+                                    app:met_floatingLabel="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/BCCountryLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red"
+                                    android:visibility="visible" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/BCCountrySpinner"
+                                    style="@style/material_edittext_style"
+                                    android:layout_height="wrap_content"
+                                    android:ems="15"
+                                    android:hint="Country"
+                                    app:met_floatingLabel="normal" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCZipeditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/_zip_code"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLength="10"
+                                    android:singleLine="true" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCPhoneNumberEditText"
+                                    style="@style/material_edittext_style"
+                                    android:layout_height="wrap_content"
+                                    android:ems="11"
+                                    android:hint="@string/phone"
+                                    android:inputType="phone"
+                                    android:maxLength="14"
+                                    android:singleLine="true" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red"
+                                    android:visibility="invisible" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCFaxEditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/fax_number_"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLength="14"
+                                    android:singleLine="true"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/text2"
+                    style="@style/subTitleTextView"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/Signing_Authority" />
+
+                <android.support.v7.widget.CardView style="@style/Border">
+
+                    <LinearLayout style="@style/Border2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCNameEditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/Name"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="35"
+                                    android:nextFocusForward="@+id/BCTitleEditText" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCTitleEditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/Title"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapSentences"
+                                    android:maxLength="35"
+                                    android:nextFocusForward="@+id/BCDayPhoneEditText" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextViewStyle"
+                                    android:text="*"
+                                    android:textColor="@color/red" />
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/BCDayPhoneEditText"
+                                    style="@style/material_edittext_style"
+                                    android:ems="15"
+                                    android:hint="@string/Day_time_phone"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="phone"
+                                    android:maxLength="14"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/BCCancelbutton"
+                style="@style/CancelButtonStyle"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/BCCancelbuttonText"
+                    style="@style/card_button_text"
+                    android:text="@string/back" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/BCnext"
+                style="@style/PrimaryButtonStyle"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/BCnextText"
+                    style="@style/card_button_text"
+                    android:text="@string/next" />
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

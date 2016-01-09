@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="teststring">values-16</string>
+    <string name="app_name">Form 8868</string>
+    <string name="empty_string"></string>
+    <string name="submit">Login</string>
+    <string name="_email_address">Email Address</string>
+    <string name="_password">Password</string>
+    <string name="user_login">User Login</string>
+    <string name="userlogin_image">Userlogin image</string>
+    <string name="_2014_express990_com">© 2014 Eexpresstaxexempt.com/ \n
+        SPAN Enterprises LLC. All rights reserved.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">ConfirmPassword</string>
+    <string name="contactname">Contactname</string>
+    <string name="phone">Phone</string>
+    <string name="email_username">Email/username</string>
+    <string name="todo">TODO</string>
+    <string name="are_you_a_tax_professional_paid_preparer_">Are you a Tax Professional (Paid Preparer)?</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="signup">SignUp</string>
+    <string name="email_address_is_required">*Email Address is required</string>
+    <string name="password_is_required">*Password is required</string>
+    <string name="exempt_organization_details_">"Exempt Organization Details "</string>
+    <string name="_organization_name_">Organization Name</string>
+    <string name="doing_business_as_">Doing Business As</string>
+    <string name="OtherDBANames">Other DBA Names</string>
+
+    <string name="Other">Other</string>
+
+    <string name="_ein_">"EIN"</string>
+    <string name="address_details_">"Address Details "</string>
+    <string name="is_the_address_outside_us_">\u0020Is the address outside US?</string>
+    <string name="_address_1_">Address Line 1</string>
+    <string name="_city_">*City:</string>
+    <string name="_state_or_province_">State or Province</string>
+    <string name="_zip_code_">*ZIP Code</string>
+    <string name="_email_address_">*Email Address</string>
+    <string name="website_address_">Website Address</string>
+    <string name="_phone_number_">Phone Number</string>
+    <string name="principal_officers_details_">"Principal Officers Details "</string>
+    <string name="_principal_officer_name_">Principal Officer Name</string>
+    <string name="is_this_address_same_as_your_business_address_">"Is this address same as your business address? "</string>
+    <string name="_address_2_">Address Line 2</string>
+    <string name="save_and_continue">Save and Continue</string>
+    <string name="emailaddresscolor"> Html.fromHtml("RGB colors are <font color="#FF0000">RED</font>, <font color="#00FF00">GREEN</font> and <font color="#0000FF">BLUE</font>")</string>
+    <string name="Forget_your_password"><u>Forgot your password?</u></string>
+    <string name="new_user">New User</string>
+    <string name="_contact_name">Contact Name</string>
+    <string name="_how_did_you_find_us_">*How you find us?</string>
+    <string name="_confirm_email_address">*Confirm Email Address</string>
+    <string name="_confirm_password">*Confirm Password</string>
+    <string name="_phone">*Phone:</string>
+    <string name="tax_professional_paid_preparer_">Tax Professional (Paid Preparer)</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="_2014_express990_com_span_enterprises_llc_all_rights_reserved">© 2014 Expresstaxexempt.com, SPAN Enterprises LLC. All rights reserved</string>
+    <string name="in_progress">In Progress</string>
+    <string name="_confirm_ein_">Confirm EIN</string>
+    <string name="_business_name_">Organization Name</string>
+    <string name="_form_of_organization_">Form of Organization</string>
+    <string name="_address_line1_">Address Line 1</string>
+    <string name="address_line2_">Address Line 2</string>
+    <string name="_state_">State</string>
+    <string name="_country_">Country</string>
+    <string name="_phone_">Phone</string>
+    <string name="website_address">Website Address</string>
+    <string name="_email">Email</string>
+    <string name="is_this_address_the_same_as_your_bussiness_address_">Is this address the same as your organization address?</string>
+    <string name="_address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="_city">City</string>
+    <string name="_state">State</string>
+    <string name="_zip_code">ZIP Code</string>
+    <string name="create_exempt_organization">Create Exempt Organization</string>
+    <string name="principal_officer_details">Principal Officer Details</string>
+    <string name="exempt_organization_details">Exempt Organization Details</string>
+    <string name="business_details">Business Details</string>
+    <string name="forget_password_"><u>Forgot Password?</u></string>
+    <string name="send">Send</string>
+    <string name="balancedue"><u>BALANCE DUE</u></string>
+    <string name="irspay"><u>IRS PAYMENT</u></string>
+
+    <string name="cancel">Cancel</string>
+    <string name="congratulations">Your return is on its way to the IRS.Once the IRS processes the return, we will notify you using the email address on our file </string>
+    <string name="edit">Edit</string>
+    <string name="summarytxt"><b>Summary of your Form 7004</b></string>
+    <string name="congratulations1">Although, we expect that the IRS will complete the processing of your return within an hour, please note that there could be a delay due to the volume of returns filled with IRS.</string>
+    <string name="delete">Delete</string>
+    <string name="show_more"><u>Show more</u></string>
+    <string name="hide"><u>Hide</u></string>
+    <string name="this_is_a_period_of_12_consecutive_months_beginning_january_1_and_ending_december_31">This is a period of 12 consecutive months beginning January 1 and ending December 31</string>
+    <string name="time_zone">*Time Zone:</string>
+    <string name="e_postcard_choose_tax_year_amp_eligibility">e-Postcard - Choose Tax Year &amp; Eligibility</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="tax_year_eligibility">Tax Year Eligibility</string>
+    <string name="_firm_name_">"*Firm Name "</string>
+    <string name="_first_name_">"*First Name "</string>
+    <string name="_last_name_">"*Last Name "</string>
+    <string name="_ptin_">"*PTIN "</string>
+    <string name="_address_line_1_">*Address Line 1</string>
+    <string name="address_line_2_">Address Line 2</string>
+    <string name="fax_number_">Fax Number</string>
+    <string name="_time_zone_">*Time Zone</string>
+    <string name="save">Update</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="support">Support</string>
+    <string name="log_off">Log Off</string>
+    <string name="here"><u>here.</u></string>
+    <string name="prioryearpindetails">*Prior Year(2000) Adjusted Gross Income(AGI) $</string>
+    <string name="prioryearpindetailsmobile">Prior Year(2000) Adjusted Gross Income(AGI) $</string>
+    <string name="AuditSuccess">No errors were found in your tax return. \n
+Click Next to proceed to electronically send the return to the IRS.</string>
+    <string name="AuditCautionSuccess">No caution were found in your tax return.</string>
+    <string name="message">You have not added any Organization yet. \n Please click Add New Organization button on the bottom-left of the Organization List Menu to add a new Organization.</string>
+    <string name="PrimaryTaxpayerInformation">Primary Taxpayer Information</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="montharray">
+        <item>January (01)</item>
+        <item>February (02)</item>
+        <item>March (03)</item>
+        <item>April (04)</item>
+        <item>May (05)</item>
+        <item>June (06)</item>
+        <item>July (07)</item>
+        <item>August (08)</item>
+        <item>September (09)</item>
+        <item>October (10)</item>
+        <item>November (11)</item>
+        <item>December (12)</item>
+    </string-array>
+
+    <string-array name="suffixarray">
+        <item>Select Suffix</item>
+        <item>Jr</item>
+        <item>Sr</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+    </string-array>
+
+    <string name="tax_year_other_details">Tax Year and other details:</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="create">Create</string>
+    <string name="are_available_in_web_version_">filing are available in web version www.expresstaxexempt.com/ for 990-N (e-Postcard)</string>
+    <string name="_existing_users">" EXISTING USER"</string>
+    <string name="allrights">ExpressTaxExempt.com, SPAN Enterprises LLC. All rights reserved \n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;202 E Main St, Rock Hill, SC 29730.</string>
+    <string name="transmit_return_to_the_irs">Transmit Return to the IRS</string>
+    <string name="form_990_n_e_postcard_">Form 990-N (e-Postcard)</string>
+    <string name="_9_am_to_9_pm_est_monday_friday_9_am_to_9_pm_est_monday_friday">"9 AM to 6 PM EST Monday - Friday"</string>
+    <string name="Holding"><u>Holding Companies</u></string>
+    <string name="SpouseInformation"><u>Spouse Information</u> </string>
+    <string name="OtherDetails"><u>Other Details</u> </string>
+    <string name="mailingaddressinfo">Mailing Address Information:</string>
+    <string-array name="noeinreasonarray">
+        <item>None</item>
+        <item>Pending</item>
+        <item>Applied For</item>
+    </string-array>
+
+    <string-array name="cardtypearray">
+        <item>Visa</item>
+        <item>Master Card</item>
+        <item>Discover</item>
+        <item>American Express</item>
+    </string-array>
+    <string name="checkwifi">It seems to be you are Connected to a Network but No Data transmission, \n Check Your Wifi or Data Connection and Try Again!</string>
+    <string name="i_will_pay_by_electronic_funds_withdrawal_efw_">I will pay by \nElectronic Funds Withdrawal (EFW)</string>
+    <string name="idonotowetax">I do not owe taxes or I am expecting a refund from the IRS for</string>
+    <string name="i_will_pay_the_taxes_by_eftps">I will pay the taxes by EFTPS</string>
+    <string name="forgot_password_"><u>Forgot Password?</u></string>
+    <string name="congratstext">You have made the right choice by making Express Tax Exempt your tax extension solution. Now that you are registered with us, we can notify you of the status of your tax extension instantly. We will also send you any tax law changes that you might need to know as well as share some advice on how to navigate the often-confusing world of tax forms. If you have any questions, please feel free to contact us.</string>
+    <string name="congratstextmobile">You have made the right choice by making Express Extension your tax extension solution. \nNow that you are registered with us, we can notify you of the status of your tax extension instantly. \nWe will also send you any tax law changes that you might need to know \nas well as share some advice on how to navigate the often-confusing world of tax forms. \nIf you have any questions, please feel free to contact us.</string>
+    <string name="congratstext2">Please do not hesitate to contact us with questions at any time, we are always happy to help. You may call our RockHill, South Carolina based support team at 704.839.2321 and live chat with us during business hours or e-mail us around the clock at support@expresstaxexempt.com.</string>
+    <string name="congratstextmobile2">Please do not hesitate to contact us with \nquestions at any time, we are always happy to help. \nYou may call our RockHill, South Carolina based support team at 704.839.2321 \nand live chat with us during business hours or e-mail us around the clock at support@expresstaxexempt.com.</string>
+    <string name="congratulationsheader">Congratulations! You have registered with ExpressTaxExempt.com</string>
+    <string name="congratulationsheadermobile">Congratulations!\nYou have registered with \ExpressTaxExempt.com</string>
+    <string name="uscitizentext">Check this box if you are a US citizen or resident and qualify for Out of Country status. <u>Do I Qualify?</u></string>
+
+    <string name="ElectronicSignaturetext">I am signing this Tax Extension and consent \nto the Electronics Funds Withdrawal by\nentering my self select PIN and my birth date\nas below.</string>
+
+    <string name="i_owe_taxes_to_the_irs_for_2014">I owe taxes to the IRS for</string>
+    <string name="paybymoneyorder">I will pay by Check or Money Order. (Address and other details are provided)</string>
+    <string name="points">\u0020"1. Make your check or money order payable to the United States Treasury. Do not send cash. \n 2. Write your social security number, daytime phone number, and 2000 Form 4868 on your check or money order. \n 3. Print and Enclose a copy of the filled 4868 (available from us after you pay for the filing) \n 4. Do not staple or attach your payment to Form 4868. \n Mail the check, money order with a copy of 4868 to the address below:"</string>
+
+
+    <!-- nav drawer-->
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <!-- navigation drawer item labels  -->
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+
+    <string name="auto_tax_help_text">You have chosen to extend Form 990-T (trust other than above) - Exempt Organization Business Income Tax Return for additional 3 months. IRS provides a 3 months extension for this form</string>
+    <string name="nonauto_tax_help_text">You have chosen to extend Form 990-T (trust other than above) - Exempt Organization Business Income Tax Return for additional 3 months.</string>
+
+    <string name="Tentative_Tax_and_Payments">Tentative Tax and Payments</string>
+    <string name="Estimated_Tax">Estimated Tax($) :</string>
+    <string name="Payments_made">Payments made towards the taxes until now($) :</string>
+    <string name="Balance_Due">Balance Due($) :</string>
+
+    <string name="Balance_Due_hint">Please note that Form 8868 is an application for filing an extension of time, not payment. The IRS wants you to make the tax payment along with the application for extension.</string>
+
+    <string name="IRS_SubTitile">Electronic Funds Withdrawal/EFTPS</string>
+
+    <string name="i_will_pay">\u0020I will pay by Electronic Funds Withdrawal</string>
+
+    <string name="EFTPS">\u0020EFTPS</string>
+
+    <string name="EFTPS_helpText">You can pay the tax due electronically to the IRS by visiting <u> www.EFTPS.gov </u> If you already have an account with EFTPS.GOV, it only takes minutes to pay the taxes. If you do not have an account with EFTPS.GOV, it will take about 15 business days to set one up.</string>
+
+    <string name="EFTPS_accept">I accept that it is my responsibility to send the tax due payment to the IRS using eftps.gov website, FTDs or by other means.</string>
+
+    <string name="Account_Type">Account Type</string>
+
+    <string name="Bank_Account_Number">Bank Account Number</string>
+
+    <string name="Bank_Routing_Number">Bank Routing Number</string>
+
+    <string name="Request_Payment_Date">Request Payment Date</string>
+
+    <string name="TaxPayer_Day_Time_Phone">TaxPayer Day Time Phone</string>
+
+    <string name="EFW_PIN">Enter any 5 digit number as your EFW PIN</string>
+
+    <string name="Electronic_Funds_Consent">Electronic Funds Withdrawal Consent </string>
+
+    <string name="Electronic_Funds_Condition">I authorize the U.S. Treasury and its designated Financial Agent to initiate an electronic funds withdrawal (direct debit) entry to the financial institution account indicated in the tax preparation software for payment of the taxpayer’s balance due on Form 7004, and the financial institution to debit the entry to this account. To revoke a payment, I must contact the U.S. Treasury Financial Agent at 1-888-353-4537 no later than 2 business days prior to the payment (settlement) date. I also authorize the financial institution involved in the processing of the electronic payment of taxes to receive confidential information necessary to answer inquiries and resolve issues related to the payment.</string>
+
+    <array name="Account_Type_Array">
+        <item>Checking</item>
+        <item>Savings</item>
+    </array>
+
+
+    <string name="Books_are_in_care">Books are in the care of</string>
+    <string name="is_it_a_business">Is it a business?</string>
+    <string name="Name_of_person">Name of Person</string>
+    <string name="Name_of_business">Name of Business</string>
+    <string name="Signing_Authority">Signing Authority</string>
+    <string name="Name">Name</string>
+    <string name="Title">Title</string>
+    <string name="Day_time_phone">Day Time Phone</string>
+
+    <string name="Form_summary">Form Summary</string>
+    <string name="Form_to_be_extended">Form to be extended</string>
+    <string name="Tax_Year_for_the_Organization_is">Tax Year for the Organization is</string>
+    <string name="Tax_Period">Tax Period</string>
+    <string name="Actual_Due_Date">Actual Due Date</string>
+    <string name="Extended_Due_Date">Extended Due Date</string>
+    <string name="Type_of_Extension">Type of Extension</string>
+    <string name="Last_Updated_On">Last Updated On</string>
+
+    <string name="Other_Details">Other Details</string>
+
+    <string name="Books_are_in_thecare_of_Details">Books are in the care of Details</string>
+
+    <string name="Tax_and_Payments">Tax and Payments</string>
+    <string name="Tentative_Tax_Amount">Tentative Tax Amount</string>
+    <string name="Credit_Amount">Credit Amount</string>
+    <string name="Balance_Due_val">Balance Due</string>
+    <string name="Group_Exemption_Number">Group Exemption Number(GEN)</string>
+    <string name="Part_of_Group">Part of Group</string>
+
+    <string name="Error_Message">Error Message</string>
+    <string name="Caution_Messages">Caution Messages</string>
+
+    <string name="Error_Code">Error Code</string>
+    <string name="Action">Action</string>
+    <string name="Fix_Me"><u>Fix Me</u></string>
+
+    <string name="Whole_No_Error">No errors were found in your tax return.</string>
+    <string name="Whole_No_Error1">Click <b>Next</b> to proceed to electronically send the return to the IRS.</string>
+
+    <string name="Disclaimer"><b>Disclaimer:</b></string>
+    <string name="Disclaimer_Text"><b>Please Note: The integrated Tax Audit verifies that all required fields have been completed. Successfully passing this audit does not guarantee acceptance by the IRS. The IRS is the sole entity able to authorize the acceptance and verify the accuracy of the information entered on your return.</b></string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <string name="Your_Order">Your Order</string>
+    <string name="Form_Name">Form Name</string>
+    <string name="Price">Price</string>
+    <string name="form1">E-Filing of Form 8868</string>
+    <string name="form2">E-Filing of the Form 8868 for the tax year 2015</string>
+    <string name="Subtotal">Subtotal</string>
+    <string name="mobile_alert">Text Alert on IRS acceptance of this return</string>
+    <string name="fax_alert">Automatic Fax on IRS acceptance of this return</string>
+    <string name="Mobile_Phone">Mobile Phone</string>
+    <string name="Alert_Fee">Alert Fee</string>
+    <string name="Fee_Summary">Fee Summary</string>
+    <string name="Discounts">Discounts</string>
+    <string name="Discount_code">Discount Code (if any)</string>
+    <string name="Apply">Apply</string>
+    <string name="Discount_fee">Discount Amount</string>
+    <string name="Total_Fees">Total Fees</string>
+
+    <string name="Payment">Payment</string>
+    <string name="paymentStr">This charge on your statement will show as ExpressTaxExempt.com</string>
+    <string name="creditcardDetails"><b>Credit Card Details</b></string>
+    <string name="Credit_Card">Credit Card</string>
+    <string name="Payment_Details">Payment Details</string>
+    <string name="Billing_Address"><b>Billing Address</b></string>
+    <string name="NameOnCard">Name on Card</string>
+    <string name="CardNo">Card Number</string>
+    <string name="ExpirationDate">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
+
+    <string name="dashboardCaps"><b>DASHBOARD</b></string>
+    <string name="review_org_detail">Review your Organization Details</string>
+    <string name="Review_Return">Review Your Return</string>
+    <string name="Review_Order">Review your Order</string>
+    <string name="Billing_Information">Billing Information</string>
+
+    <string name="Return_Number">Return Number</string>
+    <string name="EIN_Number">Employer Identification Number(EIN)</string>
+    <string name="Mailing_Address">Mailing Address</string>
+
+    <string name="Our_Service_Fees">Our Service Fees</string>
+    <string name="Form_8868_Efile">Form 8868 Efile</string>
+
+    <string name="Text_Alert">Text Alert</string>
+    <string name="Fax_Alert">Fax Alert</string>
+    <string name="Total">Total</string>
+    <string name="creditcard_info">(This credit card will be charged for our service fees)</string>
+    <string name="Ending_in">Ending in</string>
+    <string name="Tax_Year">Tax Year</string>
+
+    <string name="Remember_me">\u0020Remember me</string>
+    <string name="Tax_professnoal">\u0020Are you a Tax Professional (Paid Preparer)?</string>
+    <string name="Create_Account">Create Account</string>
+
+    <string name="Enter_email">Enter your Email Address</string>
+    <string name="Enter_pswd">Enter your password</string>
+    <string name="Common_submit">Submit</string>
+    <string name="Common_newuser">NEW USER</string>
+    <string name="Common_Create_Account">Create Account</string>
+    <string name="Start_New_Return">Start New Return</string>
+    <string name="Create_Return">Create Return</string>
+
+    <string name="No_Return">Returns are Not Created For this Year</string>
+
+    <string name="Status">Status</string>
+    <string name="View_Errors">View Errors</string>
+    <string name="View">View</string>
+    <string name="Continue_where_you_left_off">Continue where you left off</string>
+    <string name="Tax_Due">Tax Due</string>
+
+    <string name="supprot_hint">\u0020\u0020\u0020"Let&apos;s face it, no one likes this tax stuff, it can be confusing and time consuming. Our excellent customer support is nothing short of heroic! If you need assistance feel free to email or call us. We&apos;ll help you through the process and put your mind at ease.  "</string>
+
+    <string name="support_email">support@expresstaxexempt.com</string>
+    <string name="support_phone">704.839.2321</string>
+    <string name="Support_Timings">Support Timings</string>
+    <string name="email_us_at">Email us at\u0020\u0020: </string>
+    <string name="Give_us_call_at">Give us a call at\u0020\u0020: </string>
+    <string name="Phone_Support">Phone Support\u0020\u0020: </string>
+    <string name="Email_Support">Email Support\u0020\u0020: </string>
+    <string name="trasmit_to_irs">Pay and Transmit to the IRS</string>
+
+    <string name="form_selection">*Select the type of form you file with IRS for your annual tax return:</string>
+    <string name="Select_Form">Select the Form </string>
+    <string name="current_taxyear">\u0020Current Tax Year</string>
+    <string name="Previous_TaxYear">\u0020Previous Tax Year</string>
+    <string name="Fiscal_TaxYear">\u0020Fiscal Tax Year</string>
+    <string name="what_is_org_year">*What is your Organization Tax Year?</string>
+
+    <string name="reson_for_shorttaxyear">*Please select reason for short tax year</string>
+    <string name="Initial_Return">\u0020Initial Return</string>
+    <string name="Final_Return">\u0020Final Return</string>
+    <string name="changing_acc">\u0020Change in Accounting Period</string>
+
+    <string name="select_type_of_extension">Select Type of Extension</string>
+    <string name="Automatic_3_month_Extension">\u0020Automatic 3 month Extension</string>
+
+    <string name="NotAutomatic_3_month_Extension">\u0020Additional (Not Automatic) 3-Month Extension</string>
+    <string name="Actual_Due_Date_1">"Actual Due Date :"</string>
+    <string name="Extended_Due_Date_1">"Extended Due Date :"</string>
+
+    <string name="Select_the_reason_below">*Select the reason below:</string>
+    <string name="NOTE">NOTE:</string>
+    <string name="note1">The absence must have been of an individual having sole authority to execute the return</string>
+    <string name="notauto_reason1">\u0020Additional time is needed due to unavoidable absence of the taxpayer."</string>
+
+    <string name="notauto_reason2">\u0020Additional time is needed to reconstruct business records destroyed by fire or other casualty of the taxpayers place of business.</string>
+    <string name="notauto_reason3">\u0020An attempt to obtain information necessary for filing a return was requested in a timely fashion, but the information was not furnished in sufficient time to permit the timely filing of the return, or the taxpayer personally visited an IRS office for the purpose of securing information or advice and was unable to meet with an IRS representative.</string>
+    <string name="notauto_reason4">\u0020Other Reason.</string>
+    <string name="based_on_org">Select the Option Based on your Organization</string>
+    <string name="based_org_1">\u0020Is the organization a Foreign Corporation that does not have an office in US?</string>
+    <string name="based_org_2">\u0020Is this for a Group Return?</string>
+    <string name="is_whole_group">\u0020Is this Return for the whole group?</string>
+    <string name="is_part_group">\u0020 Is this return for the part of the group?</string>
+    <string name="Add_Part_Of_Group">Add Part of Group</string>
+    <string name="No_Records_Found">No Records Found</string>
+    <string name="Address">Address</string>
+    <string name="orgEin">Organisation Name / EIN</string>
+    <string name="List_Of_Part_Of_Group">List of Part of Group</string>
+    <string name="Add">Add</string>
+    <string name="Review">Review</string>
+
+    <string name="ReceiptForYourPayment">Receipt for your payment</string>
+    <string name="SummaryOfForms"> Summary of your Form 8868</string>
+
+    <string name="APPROVAL_LETTER">&#xf0f6;  APPROVAL LETTER</string>
+    <string name="FORM_8868">&#xf0c6;  FORM 8868</string>
+    <string name="RECEIPT">&#xf022;RECEIPT</string>
+
+
+    <string name="icon_pdf_view">&#xf1c1;  View</string>
+    <string name="icon_email_view">&#xf003;  Email</string>
+    <string name="icon_delete">&#xf014;  Delete</string>
+    <string name="icon_error">&#xf15c;  View Errors</string>
+
+    <string name="receipt_hint">You can view and email your receipt</string>
+    <string name="summary_hint">You can view and email your Form Summary</string>
+
+</resources>
